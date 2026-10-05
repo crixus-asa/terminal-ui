@@ -25,6 +25,8 @@
       "import": "./dist/components/ui/*.js"
     },
     "./terminal.css": "./dist/terminal.css",
+    "./theme.css": "./dist/theme.css",
+    "./themes.css": "./dist/themes.css",
     "./utils": {
       "types": "./dist/utils.d.ts",
       "import": "./dist/utils.js"

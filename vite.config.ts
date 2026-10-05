@@ -1,5 +1,6 @@
 import tailwindcss from "@tailwindcss/vite"
 import react from "@vitejs/plugin-react-swc"
+import { copyFileSync } from "node:fs"
 import { resolve } from "node:path"
 import { fileURLToPath } from "node:url"
 import { defineConfig } from "vite"
@@ -21,7 +22,18 @@ const externalPackages = [
 
 export default defineConfig({
   root: packageRoot,
-  plugins: [react(), tailwindcss()],
+  plugins: [
+    react(),
+    tailwindcss(),
+    {
+      // Ship the uncompiled theme so Tailwind consumers can compile it in their own pass.
+      name: "copy-raw-theme-css",
+      closeBundle() {
+        copyFileSync(resolve(packageRoot, "src/theme.css"), resolve(packageRoot, "dist/theme.css"))
+        copyFileSync(resolve(packageRoot, "src/themes.css"), resolve(packageRoot, "dist/themes.css"))
+      },
+    },
+  ],
   build: {
     emptyOutDir: true,
     cssCodeSplit: true,
