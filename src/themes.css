@@ -1,0 +1,427 @@
+/*
+ * Optional theme presets.
+ *
+ * Load this file after theme.css/terminal.css and apply one preset to a host
+ * element with either a class or data-terminal-theme attribute.
+ */
+
+.terminal-theme-amber,
+[data-terminal-theme="amber"] {
+  --terminal-color-canvas: #0e0d0c;
+  --terminal-color-surface-1: #181614;
+  --terminal-color-surface-2: #221f1c;
+  --terminal-color-surface-3: #342e28;
+  --terminal-color-border: #342e28;
+  --terminal-color-border-strong: #a8a29e;
+  --terminal-color-text: #fafaf9;
+  --terminal-color-text-muted: #a8a29e;
+  --terminal-color-text-subtle: #a8a29e;
+  --terminal-color-accent: #f59e0b;
+  --terminal-color-highlight: #fbbf24;
+  --terminal-color-accent-teal: #fbbf24;
+  --terminal-color-accent-secondary: #fbbf24;
+  --terminal-color-success: #86efac;
+  --terminal-color-warning: #facc15;
+  --terminal-color-danger: #fb7185;
+  --terminal-color-info: #fdba74;
+  --terminal-color-tier-low: #a8a29e;
+  --terminal-color-tier-medium: #f59e0b;
+  --terminal-color-tier-high: #86efac;
+  --terminal-color-primary-foreground: #1c1202;
+  --terminal-color-destructive-foreground: #21050b;
+  --terminal-color-success-foreground: #06130c;
+  --terminal-color-warning-foreground: #171006;
+  --terminal-color-danger-foreground: #21050b;
+  --terminal-color-info-foreground: #1c0e03;
+}
+
+.terminal-theme-violet,
+[data-terminal-theme="violet"] {
+  --terminal-color-canvas: #0b0914;
+  --terminal-color-surface-1: #131021;
+  --terminal-color-surface-2: #1d1833;
+  --terminal-color-surface-3: #2f2752;
+  --terminal-color-border: #2f2752;
+  --terminal-color-border-strong: #94a3b8;
+  --terminal-color-text: #f1f5f9;
+  --terminal-color-text-muted: #94a3b8;
+  --terminal-color-text-subtle: #94a3b8;
+  --terminal-color-accent: #a855f7;
+  --terminal-color-highlight: #c084fc;
+  --terminal-color-accent-teal: #c084fc;
+  --terminal-color-accent-secondary: #c084fc;
+  --terminal-color-success: #86efac;
+  --terminal-color-warning: #facc15;
+  --terminal-color-danger: #fb7185;
+  --terminal-color-info: #67e8f9;
+  --terminal-color-tier-low: #94a3b8;
+  --terminal-color-tier-medium: #67e8f9;
+  --terminal-color-tier-high: #86efac;
+  --terminal-color-primary-foreground: #13051f;
+  --terminal-color-destructive-foreground: #21050b;
+  --terminal-color-success-foreground: #06130c;
+  --terminal-color-warning-foreground: #171006;
+  --terminal-color-danger-foreground: #21050b;
+  --terminal-color-info-foreground: #06131a;
+}
+
+.terminal-theme-cyberpunk,
+[data-terminal-theme="cyberpunk"] {
+  --terminal-color-canvas: #08090d;
+  --terminal-color-surface-1: #10131b;
+  --terminal-color-surface-2: #171b26;
+  --terminal-color-surface-3: #232b3d;
+  --terminal-color-border: #232b3d;
+  --terminal-color-border-strong: #94a3b8;
+  --terminal-color-text: #f8fafc;
+  --terminal-color-text-muted: #94a3b8;
+  --terminal-color-text-subtle: #94a3b8;
+  --terminal-color-accent: #00e5ff;
+  --terminal-color-highlight: #00e5ff;
+  --terminal-color-accent-teal: #00e5ff;
+  --terminal-color-accent-secondary: #f43f5e;
+  --terminal-color-success: #22c55e;
+  --terminal-color-warning: #fbbf24;
+  --terminal-color-danger: #f43f5e;
+  --terminal-color-info: #67e8f9;
+  --terminal-color-tier-low: #94a3b8;
+  --terminal-color-tier-medium: #00e5ff;
+  --terminal-color-tier-high: #22c55e;
+  --terminal-color-primary-foreground: #001014;
+  --terminal-color-destructive-foreground: #21050b;
+  --terminal-color-success-foreground: #06130c;
+  --terminal-color-warning-foreground: #171006;
+  --terminal-color-danger-foreground: #21050b;
+  --terminal-color-info-foreground: #06131a;
+}
+
+.terminal-theme-obsidian,
+[data-terminal-theme="obsidian"] {
+  --terminal-color-canvas: #0a0c0a;
+  --terminal-color-surface-1: #121612;
+  --terminal-color-surface-2: #182019;
+  --terminal-color-surface-3: #263327;
+  --terminal-color-border: #263327;
+  --terminal-color-border-strong: #6b7280;
+  --terminal-color-text: #e2e8f0;
+  --terminal-color-text-muted: #6b7280;
+  --terminal-color-text-subtle: #6b7280;
+  --terminal-color-accent: #10b981;
+  --terminal-color-highlight: #22c55e;
+  --terminal-color-accent-teal: #22c55e;
+  --terminal-color-accent-secondary: #86efac;
+  --terminal-color-success: #22c55e;
+  --terminal-color-warning: #fbbf24;
+  --terminal-color-danger: #f87171;
+  --terminal-color-info: #86efac;
+  --terminal-color-tier-low: #a6b5aa;
+  --terminal-color-tier-medium: #10b981;
+  --terminal-color-tier-high: #86efac;
+  --terminal-color-text-muted: #a6b5aa;
+  --terminal-color-text-subtle: #a6b5aa;
+  --terminal-color-primary-foreground: #02130d;
+  --terminal-color-destructive-foreground: #21050b;
+  --terminal-color-success-foreground: #06130c;
+  --terminal-color-warning-foreground: #171006;
+  --terminal-color-danger-foreground: #21050b;
+  --terminal-color-info-foreground: #06130c;
+}
+
+.terminal-theme-bloodstone,
+[data-terminal-theme="bloodstone"] {
+  --terminal-color-canvas: #0d0d0f;
+  --terminal-color-surface-1: #16161a;
+  --terminal-color-surface-2: #1f1f26;
+  --terminal-color-surface-3: #2e2d38;
+  --terminal-color-border: #2e2d38;
+  --terminal-color-border-strong: #9ca3af;
+  --terminal-color-text: #f3f4f6;
+  --terminal-color-text-muted: #9ca3af;
+  --terminal-color-text-subtle: #9ca3af;
+  --terminal-color-accent: #f43f5e;
+  --terminal-color-highlight: #f87171;
+  --terminal-color-accent-teal: #f87171;
+  --terminal-color-accent-secondary: #f87171;
+  --terminal-color-success: #86efac;
+  --terminal-color-warning: #fbbf24;
+  --terminal-color-danger: #ef4444;
+  --terminal-color-info: #f87171;
+  --terminal-color-tier-low: #9ca3af;
+  --terminal-color-tier-medium: #f87171;
+  --terminal-color-tier-high: #86efac;
+  --terminal-color-primary-foreground: #21050b;
+  --terminal-color-destructive-foreground: #21050b;
+  --terminal-color-success-foreground: #06130c;
+  --terminal-color-warning-foreground: #171006;
+  --terminal-color-danger-foreground: #21050b;
+  --terminal-color-info-foreground: #21050b;
+}
+
+.terminal-theme-arctic,
+[data-terminal-theme="arctic"] {
+  --terminal-color-canvas: #07131f;
+  --terminal-color-surface-1: #0d2233;
+  --terminal-color-surface-2: #12344a;
+  --terminal-color-surface-3: #1d4b63;
+  --terminal-color-border: #24556d;
+  --terminal-color-border-strong: #8eb8ca;
+  --terminal-color-text: #e8f7ff;
+  --terminal-color-text-muted: #9cc5d8;
+  --terminal-color-text-subtle: #78a6ba;
+  --terminal-color-accent: #38bdf8;
+  --terminal-color-highlight: #a5f3fc;
+  --terminal-color-accent-teal: #22d3ee;
+  --terminal-color-accent-secondary: #7dd3fc;
+  --terminal-color-success: #5eead4;
+  --terminal-color-warning: #facc15;
+  --terminal-color-danger: #fb7185;
+  --terminal-color-info: #67e8f9;
+  --terminal-color-tier-low: #78a6ba;
+  --terminal-color-tier-medium: #38bdf8;
+  --terminal-color-tier-high: #5eead4;
+}
+
+.terminal-theme-toxic,
+[data-terminal-theme="toxic"] {
+  --terminal-color-canvas: #07100b;
+  --terminal-color-surface-1: #0d1b12;
+  --terminal-color-surface-2: #14281a;
+  --terminal-color-surface-3: #254523;
+  --terminal-color-border: #315a2c;
+  --terminal-color-border-strong: #8aa47b;
+  --terminal-color-text: #efffe8;
+  --terminal-color-text-muted: #b4d49f;
+  --terminal-color-text-subtle: #88ae78;
+  --terminal-color-accent: #84cc16;
+  --terminal-color-highlight: #bef264;
+  --terminal-color-accent-teal: #2dd4bf;
+  --terminal-color-accent-secondary: #a3e635;
+  --terminal-color-success: #4ade80;
+  --terminal-color-warning: #facc15;
+  --terminal-color-danger: #fb7185;
+  --terminal-color-info: #5eead4;
+  --terminal-color-tier-low: #88ae78;
+  --terminal-color-tier-medium: #84cc16;
+  --terminal-color-tier-high: #4ade80;
+}
+
+.terminal-theme-ember,
+[data-terminal-theme="ember"] {
+  --terminal-color-canvas: #140b08;
+  --terminal-color-surface-1: #21110b;
+  --terminal-color-surface-2: #32170d;
+  --terminal-color-surface-3: #512510;
+  --terminal-color-border: #6b3215;
+  --terminal-color-border-strong: #b9967c;
+  --terminal-color-text: #fff7ed;
+  --terminal-color-text-muted: #d6ad92;
+  --terminal-color-text-subtle: #b98264;
+  --terminal-color-accent: #f97316;
+  --terminal-color-highlight: #fb923c;
+  --terminal-color-accent-teal: #facc15;
+  --terminal-color-accent-secondary: #fbbf24;
+  --terminal-color-success: #86efac;
+  --terminal-color-warning: #facc15;
+  --terminal-color-danger: #fb7185;
+  --terminal-color-info: #fdba74;
+  --terminal-color-tier-low: #b98264;
+  --terminal-color-tier-medium: #f97316;
+  --terminal-color-tier-high: #86efac;
+}
+
+.terminal-theme-steel,
+[data-terminal-theme="steel"] {
+  --terminal-color-canvas: #10151b;
+  --terminal-color-surface-1: #182029;
+  --terminal-color-surface-2: #222d38;
+  --terminal-color-surface-3: #354451;
+  --terminal-color-border: #465866;
+  --terminal-color-border-strong: #a8b6c2;
+  --terminal-color-text: #edf2f7;
+  --terminal-color-text-muted: #b0bdc8;
+  --terminal-color-text-subtle: #8d9da9;
+  --terminal-color-accent: #94a3b8;
+  --terminal-color-highlight: #cbd5e1;
+  --terminal-color-accent-teal: #60a5fa;
+  --terminal-color-accent-secondary: #64748b;
+  --terminal-color-success: #86efac;
+  --terminal-color-warning: #fbbf24;
+  --terminal-color-danger: #f87171;
+  --terminal-color-info: #7dd3fc;
+  --terminal-color-tier-low: #8d9da9;
+  --terminal-color-tier-medium: #60a5fa;
+  --terminal-color-tier-high: #86efac;
+}
+
+.terminal-theme-magenta,
+[data-terminal-theme="magenta"] {
+  --terminal-color-canvas: #120817;
+  --terminal-color-surface-1: #1d0d28;
+  --terminal-color-surface-2: #2b123a;
+  --terminal-color-surface-3: #49205d;
+  --terminal-color-border: #642878;
+  --terminal-color-border-strong: #c4a2cf;
+  --terminal-color-text: #fff1ff;
+  --terminal-color-text-muted: #d5a9df;
+  --terminal-color-text-subtle: #b880c7;
+  --terminal-color-accent: #ec4899;
+  --terminal-color-highlight: #f0abfc;
+  --terminal-color-accent-teal: #22d3ee;
+  --terminal-color-accent-secondary: #a855f7;
+  --terminal-color-success: #86efac;
+  --terminal-color-warning: #facc15;
+  --terminal-color-danger: #fb7185;
+  --terminal-color-info: #67e8f9;
+  --terminal-color-tier-low: #b880c7;
+  --terminal-color-tier-medium: #ec4899;
+  --terminal-color-tier-high: #86efac;
+}
+
+/*
+ * Recompute aliases on the themed host. Defining these only on :root would
+ * preserve the root's already-computed values when a theme is nested.
+ */
+.terminal-theme-amber,
+[data-terminal-theme="amber"],
+.terminal-theme-cyberpunk,
+[data-terminal-theme="cyberpunk"],
+.terminal-theme-obsidian,
+[data-terminal-theme="obsidian"],
+.terminal-theme-violet,
+[data-terminal-theme="violet"],
+.terminal-theme-bloodstone,
+[data-terminal-theme="bloodstone"],
+.terminal-theme-arctic,
+[data-terminal-theme="arctic"],
+.terminal-theme-toxic,
+[data-terminal-theme="toxic"],
+.terminal-theme-ember,
+[data-terminal-theme="ember"],
+.terminal-theme-steel,
+[data-terminal-theme="steel"],
+.terminal-theme-magenta,
+[data-terminal-theme="magenta"] {
+  --surface-0: var(--terminal-color-canvas);
+  --surface-1: var(--terminal-color-surface-1);
+  --surface-2: var(--terminal-color-surface-2);
+  --surface-3: var(--terminal-color-surface-3);
+  --surface-border: var(--terminal-color-border);
+  --surface-border-strong: var(--terminal-color-border-strong);
+  --accent-neon: var(--terminal-color-highlight);
+  --accent-neon-secondary: var(--terminal-color-accent-secondary);
+  --accent-neon-teal: var(--terminal-color-accent-teal);
+  --accent-neon-success: var(--terminal-color-success);
+  --accent-neon-warning: var(--terminal-color-warning);
+  --accent-neon-danger: var(--terminal-color-danger);
+  --accent-neon-info: var(--terminal-color-info);
+
+  --comp-panel-bg: color-mix(in srgb, var(--terminal-color-surface-2) 60%, transparent);
+  --comp-modal-bg: var(--terminal-color-surface-2);
+  --comp-panel-border: color-mix(in srgb, var(--terminal-color-accent) 28%, transparent);
+  --comp-panel-header-bg: color-mix(in srgb, var(--terminal-color-canvas) 70%, transparent);
+  --comp-panel-corner: var(--terminal-color-accent);
+  --comp-panel-accent: var(--terminal-color-highlight);
+  --comp-panel-label: var(--terminal-color-text-subtle);
+  --comp-panel-font: var(--terminal-font-mono);
+  --comp-btn-primary-bg: color-mix(in srgb, var(--terminal-color-accent) 18%, transparent);
+  --comp-btn-primary-border: color-mix(in srgb, var(--terminal-color-accent) 50%, transparent);
+  --comp-btn-primary-text: var(--terminal-color-accent);
+  --comp-btn-primary-hover-bg: color-mix(in srgb, var(--terminal-color-accent) 28%, transparent);
+  --comp-btn-ghost-border: var(--terminal-color-border-strong);
+  --comp-btn-ghost-text: var(--terminal-color-text-subtle);
+  --comp-badge-primary-bg: color-mix(in srgb, var(--terminal-color-accent) 12%, transparent);
+  --comp-badge-primary-border: color-mix(in srgb, var(--terminal-color-accent) 40%, transparent);
+  --comp-badge-primary-text: var(--terminal-color-accent);
+  --comp-input-bg: color-mix(in srgb, var(--terminal-color-surface-1) 80%, transparent);
+  --comp-input-border: var(--terminal-color-border-strong);
+  --comp-input-border-focus: var(--terminal-color-focus);
+  --comp-input-text: var(--terminal-color-text);
+
+  --background: var(--terminal-color-canvas);
+  --foreground: var(--terminal-color-text);
+  --card: var(--terminal-color-surface-2);
+  --card-foreground: var(--terminal-color-text);
+  --card-elevated: var(--terminal-color-surface-3);
+  --popover: var(--terminal-color-surface-2);
+  --popover-foreground: var(--terminal-color-text);
+  --primary: var(--terminal-color-accent);
+  --primary-foreground: var(--terminal-color-primary-foreground, var(--terminal-color-text));
+  --secondary: var(--terminal-color-surface-3);
+  --secondary-foreground: var(--terminal-color-text);
+  --muted: var(--terminal-color-surface-3);
+  --muted-foreground: var(--terminal-color-text-muted);
+  --accent: var(--terminal-color-highlight);
+  --accent-foreground: var(--terminal-color-canvas);
+  --destructive: var(--terminal-color-danger);
+  --destructive-foreground: var(--terminal-color-destructive-foreground, var(--terminal-color-text));
+  --success: var(--terminal-color-success);
+  --success-foreground: var(--terminal-color-success-foreground, #06130c);
+  --warning: var(--terminal-color-warning);
+  --warning-foreground: var(--terminal-color-warning-foreground, #171006);
+  --danger: var(--terminal-color-danger);
+  --danger-foreground: var(--terminal-color-danger-foreground, #21050b);
+  --info: var(--terminal-color-info);
+  --info-foreground: var(--terminal-color-info-foreground, #06131a);
+  --border: var(--terminal-color-border);
+  --input: var(--comp-input-bg);
+  --ring: var(--terminal-color-focus);
+  --stat-low: var(--terminal-color-tier-low);
+  --stat-medium: var(--terminal-color-tier-medium);
+  --stat-high: var(--terminal-color-tier-high);
+  --bg: var(--terminal-color-canvas);
+  --panel: var(--terminal-color-surface-2);
+  --panel-raised: var(--terminal-color-surface-3);
+  --muted-text: var(--terminal-color-text-muted);
+  --line: var(--terminal-color-border-strong);
+  --cyan: var(--terminal-color-highlight);
+  --blue: var(--terminal-color-accent);
+  --green: var(--terminal-color-success);
+  --red: var(--terminal-color-danger);
+  --amber: var(--terminal-color-warning);
+  --violet: var(--terminal-color-accent-secondary);
+  --slider-track-bg: var(--terminal-color-surface-1);
+  --disabled-glass-border: color-mix(in srgb, var(--terminal-color-info) 15%, transparent);
+  --app-shell-bg: color-mix(in srgb, var(--terminal-color-canvas) 73%, transparent);
+  --app-header-bg: color-mix(in srgb, var(--terminal-color-surface-1) 78%, transparent);
+  --app-accent-border: color-mix(in srgb, var(--terminal-color-highlight) 35%, transparent);
+  --app-accent-soft: color-mix(in srgb, var(--terminal-color-highlight) 8%, transparent);
+  --app-warning-soft: color-mix(in srgb, var(--terminal-color-warning) 6%, transparent);
+  --app-danger-soft: color-mix(in srgb, var(--terminal-color-danger) 10%, transparent);
+  --app-danger-border: color-mix(in srgb, var(--terminal-color-danger) 40%, transparent);
+  --app-editor-gradient: linear-gradient(135deg, var(--terminal-color-canvas) 0%, var(--terminal-color-surface-1) 35%, var(--terminal-color-surface-2) 70%, var(--terminal-color-surface-3) 100%);
+  --app-accent-glow: 0 0 20px color-mix(in srgb, var(--terminal-color-accent) 40%, transparent), 0 0 40px color-mix(in srgb, var(--terminal-color-accent) 15%, transparent);
+}
+
+/* Bloodstone keeps utility actions elevated and neutral; solid red remains destructive. */
+.terminal-theme-bloodstone,
+[data-terminal-theme="bloodstone"] {
+  --comp-btn-primary-bg: var(--terminal-color-surface-1);
+  --comp-btn-primary-border: color-mix(in srgb, var(--terminal-color-accent) 35%, var(--terminal-color-border));
+  --comp-btn-primary-text: #f1f5f9;
+  --comp-btn-primary-hover-bg: var(--terminal-color-surface-2);
+  --comp-btn-primary-focus: color-mix(in srgb, var(--terminal-color-accent) 30%, transparent);
+}
+
+.terminal-theme-bloodstone [data-slot="button"][data-variant="default"],
+[data-terminal-theme="bloodstone"] [data-slot="button"][data-variant="default"] {
+  border: 1px solid var(--comp-btn-primary-border);
+  background: var(--comp-btn-primary-bg);
+  color: var(--comp-btn-primary-text);
+  box-shadow: none;
+}
+
+.terminal-theme-bloodstone [data-slot="button"][data-variant="default"] > svg,
+[data-terminal-theme="bloodstone"] [data-slot="button"][data-variant="default"] > svg {
+  color: var(--terminal-color-accent);
+}
+
+.terminal-theme-bloodstone [data-slot="button"][data-variant="default"]:hover,
+[data-terminal-theme="bloodstone"] [data-slot="button"][data-variant="default"]:hover {
+  background: var(--comp-btn-primary-hover-bg);
+  box-shadow: 0 0 0 1px var(--comp-btn-primary-focus);
+}
+
+.terminal-theme-bloodstone [data-slot="button"][data-variant="default"]:focus-visible,
+[data-terminal-theme="bloodstone"] [data-slot="button"][data-variant="default"]:focus-visible {
+  box-shadow: 0 0 0 3px var(--comp-btn-primary-focus);
+}
