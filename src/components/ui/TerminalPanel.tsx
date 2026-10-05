@@ -29,22 +29,33 @@ function TerminalPanel({
   return (
     <div
       data-slot="terminal-panel"
-      className={cn("relative flex flex-col gap-4 p-5", className)}
+      className={cn(
+        "relative flex flex-col gap-[var(--terminal-section-gap)] p-[var(--terminal-panel-padding)]",
+        className
+      )}
       style={panelStyle}
       {...props}
     >
       <TerminalCornerBrackets />
       {(eyebrow || title || actions) && (
         <header className="flex items-start justify-between gap-3">
-          <div className="flex flex-col gap-1">
+          <div className="flex flex-col gap-[var(--terminal-space-1)]">
             {eyebrow && (
-              <span className="text-[11px] uppercase tracking-[0.12em] text-[var(--comp-panel-label)]">
+              <span className="text-[length:var(--terminal-font-size-caption)] leading-[var(--terminal-line-height-tight)] uppercase tracking-[0.12em] text-[var(--comp-panel-label)]">
                 {eyebrow}
               </span>
             )}
-            {title && <h3 className="text-sm font-semibold text-foreground">{title}</h3>}
+            {title && (
+              <h3 className="text-[length:var(--terminal-font-size-body)] leading-[var(--terminal-line-height-tight)] font-semibold text-foreground">
+                {title}
+              </h3>
+            )}
           </div>
-          {actions && <div className="flex shrink-0 items-center gap-2">{actions}</div>}
+          {actions && (
+            <div className="flex shrink-0 items-center gap-[var(--terminal-space-2)]">
+              {actions}
+            </div>
+          )}
         </header>
       )}
       {children}

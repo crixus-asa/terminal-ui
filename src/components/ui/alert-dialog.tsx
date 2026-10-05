@@ -61,7 +61,7 @@ function AlertDialogContent({
           className
         )}
         style={{
-          background: "var(--comp-panel-bg)",
+          background: "var(--comp-modal-bg)",
           border: '1px solid var(--comp-panel-border)',
           clipPath: 'var(--clip-xl)',
           fontFamily: "var(--comp-panel-font)",
